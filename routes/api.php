@@ -20,3 +20,6 @@ use App\Http\Controllers\PostsController;
 // });
 
 Route::get('/posts', [PostsController::class, 'index']);
+
+Route::get('/post/{id}', [PostsController::class, 'show']);
+Route::get('/post2/{id}', [PostsController::class, 'show2']);
